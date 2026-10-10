@@ -1,15 +1,18 @@
-# COVID-19 India: Exploratory Data Analysis & Statistical Modeling
+# Data Science & Machine Learning Projects (DSML)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Pandas](https://img.shields.io/badge/Pandas-3.0%2B-150458.svg)](https://pandas.pydata.org/)
 [![Status](https://img.shields.io/badge/Status-Completed-success.svg)]()
 
-A comprehensive data engineering, preprocessing, and exploratory data analysis (EDA) project evaluating the progression of the **COVID-19 pandemic in India** from **January 30, 2020 to August 06, 2020** across all Indian States and Union Territories.
+This repository contains academic and industry coursework projects for **Data Science and Machine Learning (DSML)**:
+
+1. 🦠 **[Project 1: COVID-19 India - EDA & Statistical Modeling](#-project-1-covid-19-india-eda--statistical-modeling)**
+2. 🔬 **[Project 2: A/B Test Hypothesis Testing - Old vs New Landing Page](./ab_test_hypothesis_project)**
 
 ---
 
-## 📌 Project Overview
+## 🦠 Project 1: COVID-19 India (EDA & Statistical Modeling)
 
 This project implements an end-to-end data pipeline:
 1. **Raw Ingestion & Sanitization:** Resolves real-world data quality anomalies including inconsistent naming conventions, invalid character artifacts, spatial coordinate errors, and non-monotonic daily deltas.
@@ -156,6 +159,23 @@ python src/eda_analysis.py
 ```bash
 jupyter notebook notebooks/covid19_analysis.ipynb
 ```
+
+---
+
+## 🔬 Project 2: A/B Test Hypothesis Testing (Landing Page Redesign)
+
+Located in: [`ab_test_hypothesis_project/`](./ab_test_hypothesis_project/)
+
+A statistical hypothesis test assessing whether a redesigned website landing page significantly increases conversion rate over the existing page ($N = 290,584$ users).
+
+### Key Test Results:
+- **Control Group (Old Page):** 145,274 users | **12.04%** conversion
+- **Treatment Group (New Page):** 145,310 users | **11.88%** conversion
+- **Difference:** $-0.158$ percentage points (95% CI: $[-0.394\%, +0.078\%]$)
+- **Z-Score:** $-1.31$ | **p-value:** $0.905$ ($> \alpha = 0.05$)
+- **Decision:** **Fail to reject $H_0$**. The new landing page does not produce a statistically significant increase in conversions.
+
+Detailed methodology, Chi-square cross-checks, and power analysis are documented in [ab_test_hypothesis_project/README.md](./ab_test_hypothesis_project/README.md).
 
 ---
 

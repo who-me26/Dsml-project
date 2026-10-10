@@ -1,0 +1,17 @@
+{
+  "users_control": 145274,
+  "users_treatment": 145310,
+  "conv_control": 0.120386,
+  "conv_treatment": 0.118808,
+  "difference": -0.001578,
+  "ci_low": -0.003938,
+  "ci_high": 0.000781,
+  "z": -1.3109,
+  "p_one_sided": 0.9051,
+  "p_two_sided": 0.1899,
+  "p_chi_square": 0.1899,
+  "p_permutation": 0.9066,
+  "min_detectable_effect_h": 0.0104,
+  "mismatched_removed": 3893,
+  "duplicates_removed": 1
+}
